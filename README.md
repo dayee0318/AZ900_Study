@@ -219,3 +219,57 @@ Organizations don't have complete control over resources and security | Organiza
   - Email and messaging
   - Business productivity applications
   - Finance and expense tracking
+
+
+# Module 1
+
+## What is Microsoft Azure
+- Microsoft's Cloud computing platform
+- Virtual Machine, Website and database hosting, and advanced computing services like AI, Machine Learning, IoT
+- Provides cloud-based storage: allows to store your application or backup data safely and securely
+- **Azure Functions**: can create event driven serverless applications with no coding required.
+- **Azure Container**: Container Instances and Kubermetes Service allows you to deploy containerized applications with fully managed services
+- **Azure Portal**: Lets you create, configure, and control all your services and resources from a single easy to use web-based interface
+- Azure is a continually expanding set of cloud services that help you meet current and future business challenges
+- Gives you the freedom to build, manage, and deploy applications on a massive global network using your favorite tools and frameworks
+
+## Get started with Azure accounts
+- To create and use Azure services, you need an **Azure subscription**
+- Then, you can start creating Azure resources within each subscription.
+![level of account group](img1.png)
+
+## Microsoft Learn sandbox?
+- learn exercises use a technology called sandbox, which creates a temporary subscription that's added to your Azure account
+- Allows you to create Azure resources during a Learn-module.
+
+## Explore Sandbox
+- PowerShell CLI
+  - pwsh (on Bash)
+  - Get-date
+  - az version (start azure command az)
+- BASH CLI
+  - bash (on PowerShell)
+  - date
+  - az upgrade (start azure command az)
+
+## Azure CLI interactive mode
+- az interactive
+  - enter "a" for auto-completion
+- version
+- upgrade
+- exit
+
+# Describe Azure Physical infrastructure
+- Physical infrastructure
+  - Starts with datacenters around the world
+  - Datacenters are grouped into Azure Regions or Azure Availability Zones
+
+## Regions
+- Geographical area on the planet that contains at least one, but potentially multiple datacenters that are nearby and networked together with a low-latency network.
+
+## Availability Zones
+- physically separate datacenters within an Azure region.
+- Each availability zone is made up of one or more datacenters equipped with independent power, cooling, and networking
+- is set up to be an isolation boundary. (If one zone goes down, the other continues working)
+- Connected through high-speed, private fiber-optic networks.
+![Azure Region](img2.png)
