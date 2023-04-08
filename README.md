@@ -1,5 +1,7 @@
 #AZ900: Azure Fundamentals
 
+# Module 1
+
 ## Cloud Computing
 - lets you choose the power and features you need to run your software.
 - Pay for only the services you use
@@ -105,3 +107,71 @@ Organizations don't have complete control over resources and security | Organiza
 - No need to purchase & manage costly infrastructure that users might not use
 - The ability to pay for more resources when they're needed.
 - The ability to stop paying for resources that are no longer needed.
+
+# Module 2
+
+## Benefits of high availability and scalability in the cloud
+
+### High availability
+- Azure is a highly available cloud environment with uptime guarantees depending on the service.
+- SLAs: Service-Level Agreements
+  - Formal agreement between a service provider and customer
+  - Guarantees the customer a stated level of service
+- Azure SLA
+  - represented as a percentage, related to the service or application's availability
+  - (Availability = up time) → 100% available / 100% uptime = service is always available to use
+  - (Unavailability = down time) → used for required maintenance or upgrades
+  - Why maintaining 100%  uptime is difficult?
+    - No time for maintenance / update
+    - require duplicating every single component in case one component failed
+    - require those backup components to pick up the service tasks with zero interruption to the customer
+  - 99% and 99.9% differences?
+    - 99% can be unavailable for up to 1.6 hours/week or 7.2 hours/month (Time cumulative)
+    - 99.9% can be unavailable only 10 minutes/week or 43.2 minutes/month
+
+### Scalability
+- Ability to adjust resources to meet demand.
+- **Vertical scaling**
+  - to add more CPUs or RAM to the virtual machine (more processing power)
+- ** Horizontal scaling**
+  - suddenly experienced a steep jump in demand.
+  - add additional virtual machines or containers, scaling out.
+
+## Benefits of reliability and predictability in the cloud  
+
+### Reliability
+- Ability of a system to recover from failures and continue to function.
+- cloud = decentralized design → naturally supports a reliable and resilient infrastructure.
+
+### Predictability
+- can be focused on **Performance predictability** or **Cost predictability**.
+- Performance
+  - focuses on predicting the resources needed to deliver a positive experience for your customers.
+  - Autoscaling, load balancing, high availability
+- Cost
+  - focuses on predicting or forecasting the cost of the cloud spend.
+  - Track resource use in real time, monitor resources to ensure most efficient way of using, apply data analytics to find patterns and trends
+  - use tools like to Total Cost of Ownership (TCO) or pricing calculator
+
+
+## Benefits of security and governance in the cloud
+- Depending on your operating model, software patches and updates may also automatically be applied, which helps with both governance and security
+- Security
+  - can find a cloud solution that matches security needs.
+  - IaaS: provides physical resources / let you manage the os and installed software, including patches and maintenance. (Max control of security)
+  - PaaS: patches and maintenance taken care of automatically
+- cloud is intended as an over-the-internet delivery of IT resources
+- Typically, well suited to handle things like DDoS (Distributed Denial of Service) attacks, making network more robust and secure
+
+## Benefits of manageability in the cloud
+- Two types of manageability for cloud computing: Management **of** the cloud, Management **in** the cloud
+- Management of the cloud: speaks to managing your cloud resources
+  - automatically scale resource deployment based on need
+  - Deploy resources based on a preconfigured template, removing the need for manual configuration
+  - Monitor the health of resources and automatically replace failing resources
+  - Receive automatic alerts based on configured metrics, so you're aware of performance in real time
+- Management in the cloud: speaks to how you're able to manage your cloud environment and resources.
+  - Through a web portal
+  - Using a command line interface
+  - Using APIs
+  - Using PowerShell
