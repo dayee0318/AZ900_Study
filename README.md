@@ -289,8 +289,8 @@ Organizations don't have complete control over resources and security | Organiza
 - Need to use a sovereign region for compliance or legal purposes.
 
 
-# Describe Azure management infrastructure
-## Azure resources and resource groups
+## Describe Azure management infrastructure
+### Azure resources and resource groups
 - Resource is the basic building block of Azure.
 - VMs, virtual networks, databases, cognitive services are all considered resources within Azure
 - Resource groups are simply groupings of resources.
@@ -299,7 +299,7 @@ Organizations don't have complete control over resources and security | Organiza
 - Resource groups provide a convenient way to group resources together.
 - resource groups are a way to logically organize resources,
 
-## Azure subscriptions
+### Azure subscriptions
 - are a unit of management, billing, and scale.
 - Subscriptions allow you to logically organzie your resource groups and facilitate billing.
 ![Core architectural components of Azure](img3.png)
@@ -309,13 +309,13 @@ Organizations don't have complete control over resources and security | Organiza
   - Billing boundary: determines how an Azure account is billed 
   - Access control boundary: reflect different organizational structures by subscription
 
-## Create additional Azure subscriptions
+### Create additional Azure subscriptions
 - you can create additional subscriptions for resource or billing management purposes.
   - Environments: separate environments for development and testing, security, or to isolate data for compliance reasons. resource access control occurs at the subscription level.
   - Organizational structures: reflect different organizational structure. limit one team to lower-cost resources, while allowing the IT department a full range.
   - Billing: costs are first aggregated at the subscription level, you might want to create one subscription for your production workloads and another for your development and testing workloads.
 
-## Azure management groups
+### Azure management groups
 - Resources are gathered into resource groups, and resource groups are gathered into subscriptions.
 - imagine if you're dealing with multiple app, development teams, and geographies.
 - need a way to efficiently manage access for many subscriptions and compliance for those subscriptions.
@@ -325,7 +325,7 @@ Organizations don't have complete control over resources and security | Organiza
 - Management groups give you entierprise-grade management at a large scale, no matter what type of subscriptiosn you might have.
 - Management groups can be nested.
 
-## Managament group, subscriptions, and resource group hierarchy
+### Managament group, subscriptions, and resource group hierarchy
 ![hierarchy](img4.png)
 - How you could use management groups:
   - Create a hierarchy that applies a policy
@@ -337,3 +337,7 @@ Organizations don't have complete control over resources and security | Organiza
     - 10,000 management groups can be supported in a single directory
     - A management group tree can support up to six levels of depth. This limit doesn't include the root level or the subscription level
     - Each management group and subscription can support only one parent.
+
+# Module 2
+
+## Describe Azure Virtual Machines
